@@ -9,6 +9,11 @@ tags: [til,codingtest]
 ---
 # 자료구조&알고리즘 2일차
 
+[문제 정리]
+
+
+[개념 및 접근법]
+
 ## 1. 
 [Problem Link](https://www.acmicpc.net/problem/) <br>
 [Solved Link](https://github.com/Ooyd/)
