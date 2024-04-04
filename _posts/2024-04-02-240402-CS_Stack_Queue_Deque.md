@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 스택, 큐 ,덱 이해
+title: Stack, Queue ,Deque 이해하기
 date: '2024-04-02 03:00:00 +0900'
 description: 'CodingTest'
 categories: [Computer Science Fundamentals ,Data Structure]
 tags: [Stack, LIFO]
 
 ---
-# CodingTest 준비 : 스택, 큐, 덱 이해하기
+# 스택, 큐, 덱 이해하기
 
 코딩 테스트를 준비할때마다, 스택(Stack), 큐(Queue), 덱(Deque)같은 기본 자료구조를 인터넷 글들을 간단히 보고 사용하고 치우는게 효율적이지않아 정리하는 글입니다.
 
-## 스택
+## 스택 (Stack)
 
 스택은 후입선출(LIFO) 원칙을 따르는 매우 직관적인 자료구조. <br>
 책을 쌓아 올리고 가장 위에 있는 책부터 다시 꺼내는 것을 생각해보면 이해하기 쉽습니다.
