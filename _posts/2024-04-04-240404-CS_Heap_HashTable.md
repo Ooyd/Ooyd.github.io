@@ -9,9 +9,8 @@ tags: [Heap, Priority Queue, HashTable]
 ---
 # 힙, 우선순위 큐, 해시 테이블 이해하기
 
-코딩 테스트를 준비할 때마다, Heap, Priority Queue, HashTable 같은 자료구조에 대해 간단히 정리하여 이해하고 활용하는 것이 중요합니다.
+코딩 테스트를 준비할 때마다, Heap, Priority Queue, HashTable 같은 자료구조를 인터넷 글들을 간단히 보고 사용하고 치우는게 효율적이지않아 정리하는 글입니다.
 
-<br>
 
 ## 힙(Heap)
 
