@@ -99,3 +99,64 @@ public int binarySearch(int[] arr, int target) {
 예를 들어, 정렬된 배열에서 특정 값의 위치를 찾는 문제나, 정렬된 배열에서 특정 값보다 큰 가장 작은 값을 찾는 문제 등에서 이진 탐색을 활용할 수 있습니다.
 
 
+## Upper Bound 와 Lower Bound
+Upper Bound, Lower Bound 는 이진탐색의 확장 개념이며, 경곗값을 찾는 알고리즘이다.<br>
+이진탐색의 확장 개념이어서 해당 알고리즘도 데이터가 정렬되어야만 한다.
+
+### Lower Bound
+- Lower Bound는 찾으려는 키 값이 "없으면" 키 값보다 큰 가장 작은 정수 값을 찾습니다.
+- **중복된 값이 있어도 상관없으며, 항상 유일한 해를 구할 수 있습니다.**
+- Lower Bound는 `원하는 값이 처음 나오는 위치`를 찾는 과정이다.
+
+### Upper Bound
+- Upper Bound는 찾으려는 키 값보다 큰 첫 번째 위치를 찾습니다.
+- Upper Bound는 `원하는 값이 나오는 마지막 위치를 찾는 과정`입니다.
+
+
+### 구현 코드
+```java
+// Lower Bound
+public int lowerBound(int[] arr, int target) {
+    int low = 0;
+    int high = arr.length;
+
+    while(low < high) {
+        int mid = low + (high - low) / 2;
+        if(arr[mid] < target) {
+            low = mid + 1;
+        } else {
+            high = mid;
+        }
+    }
+
+    return low;
+}
+
+// Upper Bound
+public int upperBound(int[] arr, int target) {
+    int low = 0;
+    int high = arr.length;
+
+    while(low < high) {
+        int mid = low + (high - low) / 2;
+        if(arr[mid] <= target) {
+            low = mid + 1;
+        } else {
+            high = mid;
+        }
+    }
+
+    return low;
+}
+
+
+```
+
+### 코딩 테스트에서의 활용
+Upper Bound와 Lower Bound는 주어진 문제의 데이터가 정렬되어 있어야 사용 가능하며, 특정 값을 찾거나, 그 값의 경곗값을 찾아야 할 때 유용합니다. 
+<br> 예를 들어, 정렬된 배열에서 특정 값보다 큰 가장 작은 값을 찾는 문제나, 특정 값이 처음 또는 마지막으로 나타나는 위치를 찾는 문제 등에서 Upper Bound와 Lower Bound를 활용할 수 있습니다.
+
+
+### Reference
+[백준 알고리즘-이진탐색](https://chika1120.tistory.com/7)
+[lower_bound,upper_bound](https://blockdmask.tistory.com/168)
